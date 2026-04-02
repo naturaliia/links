@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="icon" type="image/svg+xml" href="img/faviconh.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naturaliia | Links</title>
+
+<style>
+:root{
+  --verde:#0c4d2a;
+  --amarillo:#ffc400;
+  --gris:#f5f5f5;
+}
+
+*{
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  margin:0;
+  background:var(--gris);
+  display:flex;
+  justify-content:center;
+}
+
+.container{
+  width:100%;
+  max-width:420px;
+  background:#fff;
+}
+
+/* Imagen superior */
+.hero-img img{
+  width:100%;
+  display:block;
+}
+
+/* Contenido */
+.content{
+  padding:25px;
+  padding-top: 2PX;
+  text-align:center;
+}
+
+h2{
+  color:var(--verde);
+  letter-spacing:2px;
+  font-size:14px;
+}
+
+p{
+  font-size:14px;
+  margin:10px 0 25px;
+}
+
+/* Botones tipo Linktree */
+.links a{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  padding:15px;
+  margin-bottom:15px;
+  border-radius:15px;
+  background:#fff;
+  box-shadow:0 4px 10px rgba(0,0,0,.1);
+  text-decoration:none;
+  color:var(--verde);
+  font-weight:bold;
+  transition:.3s;
+}
+
+.links a:hover{
+  transform:scale(1.03);
+}
+
+.links span{
+  font-size:26px;
+}
+
+/* Iconos */
+.icons{
+  display:flex;
+  justify-content:space-between;
+  margin:35px 0;
+}
+
+.icon{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+}
+
+.i1{background:#f7931e;}
+.i2{background:#00c853;}
+.i3{background:#00bcd4;}
+.i4{background:#e91e63;}
+.i5{background:#ffc107;}
+
+/* Imagen inferior */
+.bottom-img img{
+  width:100%;
+  display:block;
+  margin-top:10px;
+}
+/* Botón bloqueado */
+.link-bloqueado {
+  display:flex;
+  align-items:center;
+  gap:15px;
+  padding:15px;
+  margin-bottom:15px;
+  border-radius:15px;
+  background:#f0f0f0;
+  color:#999;
+  font-weight:bold;
+  box-shadow:0 4px 10px rgba(0,0,0,.05);
+  cursor:not-allowed;
+  position:relative;
+}
+
+.link-bloqueado span{
+  font-size:26px;
+}
+
+.badge {
+  position:absolute;
+  right:15px;
+  background:#ffc400;
+  color:#333;
+  font-size:11px;
+  padding:4px 8px;
+  border-radius:10px;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Imagen superior -->
+  <div class="hero-img">
+    <img src="img/imglogo.jpg" alt="Naturalika">
+  </div>
+
+  <!-- Contenido -->
+  <div class="content">
+    <h2>EL SABOR DEL ORIGEN NATURAL</h2>
+    <p>
+      Creemos que el bienestar
+      empieza con pequeños hábitos.
+    </p>
+
+    <!-- BOTONES CON LINKS -->
+    <div class="links">
+      <a href="https://naturaliia.github.io/batidos/" target="_blank">
+        <span>🥤</span>
+        BATIDOS
+      </a>
+
+      <a href="https://naturaliia.github.io/frutas/" target="_blank">
+        <span>🍓</span>
+        FRUTAS FRESCAS
+      </a>
+
+      <a href="https://naturaliia.github.io/verduras/" target="_blank">
+        <span>🥑</span>
+        VERDURAS FRESCAS
+      </a>
+        <div class="link-bloqueado">
+        <span>🔒</span>
+        ESALADAS
+        <div class="badge">MUY PRONTO</div>
+        </div>
+
+        </div>
+        <div class="link-bloqueado">
+        <span>🔒</span>
+        ECURTIDOS
+        <div class="badge">MUY PRONTO</div>
+        </div>
+
+        
+        <div class="link-bloqueado">
+        <span>🔒</span>
+        CONGELADOS
+        <div class="badge">MUY PRONTO</div>
+  </div>
+
+    </div>
+
+    
+
+  <!-- Imagen inferior -->
+  <div class="bottom-img">
+    <img src="img/footer.jpg" alt="Productos Naturalika">
+  </div>
+
+</div>
+
+</body>
+</html>
