@@ -138,6 +138,48 @@ p{
   border-radius:10px;
   font-weight:bold;
 }
+/* Botón NUEVO */
+.link-nuevo{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  padding:15px;
+  margin-bottom:15px;
+  border-radius:15px;
+  background:#ffffff;
+  box-shadow:0 4px 12px rgba(0,0,0,.15);
+  text-decoration:none;
+  color:#0c4d2a;
+  font-weight:bold;
+  position:relative;
+  transition:.3s;
+}
+
+.link-nuevo:hover{
+  transform:scale(1.04);
+}
+
+/* Badge NUEVO */
+.badge-nuevo{
+  position:absolute;
+  right:15px;
+  top:50%;
+  transform:translateY(-50%);
+  background:#ff3b3b;
+  color:#fff;
+  font-size:10px;
+  padding:4px 8px;
+  border-radius:12px;
+  font-weight:bold;
+  animation:pulse 1.5s infinite;
+}
+
+/* Animación sutil */
+@keyframes pulse {
+  0% { transform:translateY(-50%) scale(1); }
+  50% { transform:translateY(-50%) scale(1.1); }
+  100% { transform:translateY(-50%) scale(1); }
+}
 </style>
 </head>
 
@@ -174,18 +216,18 @@ p{
         <span>🥑</span>
         VERDURAS FRESCAS
       </a>
-
-      <a href="https://naturaliia.github.io/verduras/" target="_blank">
-        <span>🥑</span>
-        ENSALDAS
         
-        <div class="badge">MUY PRONTO</div>
-      </a>
+<a href="https://naturaliia.github.io/ensaladas/" class="link-nuevo">
+  <span>🥣</span>
+  ENSALDAS
+  <div class="badge-nuevo">NUEVO</div>
+</a>
+
 
         </div>
         <div class="link-bloqueado">
         <span>🔒</span>
-        ENCURTIDOS
+        ECURTIDOS
         <div class="badge">MUY PRONTO</div>
         </div>
 
